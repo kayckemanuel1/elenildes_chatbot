@@ -1,0 +1,17 @@
+{
+  "name": "whatsapp-chatbot",
+  "version": "0.0.1",
+  "main": "start.js",
+  "scripts": {
+    "start": "node start.js",
+    "dev": "nodemon start.js"
+  },
+  "keywords": [],
+  "author": "Kayck Emanuel",
+  "license": "GPLv3 ou posterior",
+  "description": "Este projeto, por meio de um chatbot no WhatsApp, busca oferecer uma ferramenta rápida, confiável e discreta para o disparo de multiplos alertas para números de segurança préviamente cadastrados.",
+  "dependencies": {
+    "qrcode-terminal": "^0.12.0",
+    "whatsapp-web.js": "^1.25.0"
+  }
+}
