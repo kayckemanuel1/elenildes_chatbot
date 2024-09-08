@@ -68,14 +68,14 @@ client.on('message', message => {
         }
 
         // #  Disparo do alerta # 
-        if (message.body.startsWith('!pedido')) { // Corrigido para capturar observação
+        if (message.body.startsWith('!pedido')) { 
             var confianca = obterConfianca(numeroDoRemetente);
 
             var agora = new Date();
             var data = agora.toISOString().split('T')[0];
             var hora = agora.toTimeString().split(' ')[0];
             var nome = obterNome(numeroDoRemetente);
-            var descricao = message.body.slice(8).trim(); // Ajuste no slice para capturar a observação
+            var descricao = message.body.slice(8).trim(); 
             var mensagem = '🚨 Você recebeu um alerta de ' + nome + '!🚨' + ' \n⏱️ Data e hora: ' + data + ', ' + hora + '\n💬 Descrição: "' + descricao + '"';
 
             for (let i = 0; i < confianca.length; i++) {
